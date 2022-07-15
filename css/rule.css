@@ -1,0 +1,42 @@
+:root {
+  /* Primary Colors */
+  --primary-B-Blue: hsl(220, 98%, 61%);
+  --primary-Ch-Bg: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  /* Light Theme */
+  --light-L-Gray: hsl(0, 0%, 98%);
+  --light-L-Gr-Blue: hsl(236, 33%, 92%);
+  --Light-Gr-Blue: hsl(233, 11%, 84%);
+  --light-D-Gr-Blue: hsl(236, 9%, 61%);
+  --light-very-D-Gr-Blue: hsl(235, 19%, 35%);
+  /* dark Theme */
+  --dark-Very-D-Blue: hsl(235, 21%, 11%);
+  --dark-Very-D-Des-Blue: hsl(235, 24%, 19%);
+  --dark-L-Gr-Blue: hsl(234, 39%, 85%);
+  --dark-Light-Gr-Blue-hover: hsl(236, 33%, 92%);
+  --dark-D-Gr-Blue: hsl(234, 11%, 52%);
+  --dark-Very-D-Gr-Blue: hsl(233, 14%, 35%);
+  --dark-Very-D-Gr-Blue: hsl(237, 14%, 26%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-L-Gray);
+  transition: 0.5s;
+}
+
+.container {
+  max-width: 500px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

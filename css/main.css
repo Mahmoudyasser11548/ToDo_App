@@ -1,0 +1,150 @@
+img,
+.icon,
+.statistics ul li,
+.statistics span:last-child {
+  cursor: pointer;
+}
+img {
+  width: 20px;
+}
+p {
+  margin: 0;
+}
+.icon {
+  left: 15px;
+  padding: 10px;
+  border: 1px solid var(--light-L-Gr-Blue);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.to-do {
+  background-image: url(../images/bg-desktop-light.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  padding-top: 50px;
+}
+.to-do .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.to-do .title button {
+  border: none;
+  background-color: transparent;
+}
+.to-do .title h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--light-L-Gray);
+  letter-spacing: 15px;
+  font-size: 2rem;
+}
+.form {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 15px 0 20px;
+}
+.form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  border: none;
+  padding-left: 50px;
+  caret-color: var(--primary-B-Blue);
+  background-color: var(--light-L-Gray);
+}
+.form input::placeholder {
+  color: var(--light-D-Gr-Blue);
+  font-family: "Josefin Sans", sans-serif;
+}
+.form input:focus {
+  outline: none;
+}
+.form > .icon {
+  position: absolute;
+}
+.to-do .tasks .task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  border-bottom: 1px solid var(--Light-Gr-Blue);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.to-do .tasks .task p {
+  padding-left: 35px;
+}
+.to-do .tasks .task .icon {
+  position: absolute;
+}
+.to-do .tasks .task .icon::before {
+  content: url(../images/icon-check.svg);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.to-do .tasks .task img {
+  position: absolute;
+  right: 15px;
+  width: 15px;
+}
+.to-do .tasks .task.done {
+  text-decoration: line-through;
+  color: var(--light-L-Gr-Blue);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.tasks .task.done .icon {
+  border: none;
+  background-image: var(--primary-Ch-Bg);
+}
+.tasks .task.done .icon::before {
+  display: block;
+}
+.statistics {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  color: var(--light-D-Gr-Blue);
+}
+.statistics span:last-child {
+  text-transform: capitalize;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.statistics span:last-child:hover {
+  color: var(--light-very-D-Gr-Blue);
+}
+.task-stat {
+  background-color: var(--light-L-Gray);
+  box-shadow: 0 5px 10px 1px var(--Light-Gr-Blue);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

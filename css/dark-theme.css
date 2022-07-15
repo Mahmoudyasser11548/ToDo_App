@@ -1,0 +1,45 @@
+body.dark {
+  background-color: var(--dark-Very-D-Blue);
+}
+.dark .to-do {
+  background-image: url(../images/bg-desktop-dark.jpg);
+}
+.dark .form input {
+  background-color: var(--dark-Very-D-Des-Blue);
+  color: var(--dark-L-Gr-Blue);
+}
+.dark .form input::placeholder {
+  color: var(--dark-L-Gr-Blue);
+}
+.dark .to-do .task-stat {
+  background-color: var(--dark-Very-D-Des-Blue);
+  box-shadow: 0 0 0 0;
+}
+.dark .to-do .tasks .task {
+  border-bottom: 1px solid var(--dark-Very-D-Gr-Blue);
+}
+.dark .to-do .tasks .task p {
+  color: var(--dark-L-Gr-Blue);
+}
+.dark .to-do .tasks .task.done {
+  text-decoration: line-through;
+  color: var(--dark-Very-D-Gr-Blue);
+}
+.dark .to-do .tasks .task.done p {
+  color: var(--dark-Very-D-Gr-Blue);
+}
+.dark .statistics {
+  color: var(--dark-D-Gr-Blue);
+}
+.dark .statistics ul li a {
+  color: var(--dark-D-Gr-Blue);
+}
+.dark .statistics ul li a.active {
+  color: var(--primary-B-Blue);
+}
+.dark .statistics ul li a:hover:not(.active) {
+  color: var(--dark-Light-Gr-Blue-hover);
+}
+.dark .statistics span:last-child:hover {
+  color: var(--dark-Light-Gr-Blue-hover);
+}

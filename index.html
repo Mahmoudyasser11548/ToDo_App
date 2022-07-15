@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Main styelsheet File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- file rule -->
+    <link rel="stylesheet" href="css/rule.css" />
+    <!-- Dark Theme -->
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="to-do">
+      <div class="container">
+        <div class="title">
+          <h1>todo</h1>
+          <button onclick="themeConvert()">
+          </button>
+        </div>
+        <div class="form">
+          <div class="icon"></div>
+          <input
+            type="text"
+            name="task"
+            id="text-task"
+            placeholder="Create a new ToDo..."
+          />
+        </div>
+        <div class="task-stat">
+          <div class="tasks"></div>
+          <div class="statistics">
+            <span class="clear">clear complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
