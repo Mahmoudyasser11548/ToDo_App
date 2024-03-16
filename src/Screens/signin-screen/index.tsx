@@ -36,7 +36,7 @@ const SignInScreen = () => {
               </Text>
             </Pressable>
           </View>
-          <Button label="Register" onPress={handleNavigation} />
+          <Button label="Log in" onPress={handleNavigation} />
         </View>
       </View>
     </SafeAreaWrapper>
