@@ -2,16 +2,16 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { SafeAreaWrapper } from "components";
 
-const CompletedScreen = () => {
+const TodayScreen = () => {
   return (
     <SafeAreaWrapper>
       <View>
-        <Text>Completed Screen</Text>
+        <Text>Today Screen</Text>
       </View>
     </SafeAreaWrapper>
   );
 };
 
-export default CompletedScreen;
+export default TodayScreen;
 
 const styles = StyleSheet.create({});

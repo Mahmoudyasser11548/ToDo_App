@@ -2,14 +2,14 @@ import { View, Text } from "react-native";
 import React from "react";
 import { SafeAreaWrapper } from "components";
 
-const EditTaskScreen = () => {
+const CategoryScreen = () => {
   return (
     <SafeAreaWrapper>
       <View>
-        <Text> Edit Task Screen </Text>
+        <Text>Category Screen</Text>
       </View>
     </SafeAreaWrapper>
   );
 };
 
-export default EditTaskScreen;
+export default CategoryScreen;

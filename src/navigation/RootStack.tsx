@@ -9,7 +9,13 @@ const Stack = createNativeStackNavigator<AppStackParamList>();
 const RootStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Root" component={AppBottomNav} />
+      <Stack.Screen
+        name="Root"
+        component={AppBottomNav}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack.Navigator>
   );
 };
