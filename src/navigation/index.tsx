@@ -8,7 +8,13 @@ const Navigation = () => {
   const { user, updateUser } = useUserGlobalStore();
 
   useEffect(() => {
-    updateUser(null);
+    updateUser(
+      {
+        email: "omg@gmail.com",
+        name: "Omg",
+      }
+      // null
+    );
 
     return () => {};
   }, []);

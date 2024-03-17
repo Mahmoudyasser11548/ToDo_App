@@ -1,13 +1,39 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AuthScreenNavigatorType } from "navigation/types";
 import { Button, InputText, SafeAreaWrapper } from "components";
+import { registerUser } from "services/api";
 
 const SignUpScreen = () => {
+  const [userData, setUserData] = useState<{
+    password: string;
+    name: string;
+    email: string;
+  }>({
+    name: "",
+    email: "",
+    password: "",
+  });
   const navigation = useNavigation<AuthScreenNavigatorType<"SignUp">>();
 
   const handleNavigation = () => navigation.navigate("SignIn");
+
+  const onSubmit = async () => {
+    try {
+      const { name, email, password } = userData;
+
+      await registerUser({
+        email,
+        name,
+        password,
+      });
+
+      handleNavigation();
+    } catch (error) {
+      throw error;
+    }
+  };
 
   return (
     <SafeAreaWrapper>
@@ -17,9 +43,39 @@ const SignUpScreen = () => {
           Your Journey starts here
         </Text>
         <View>
-          <InputText label="Name" />
-          <InputText label="Email" />
-          <InputText label="Password" />
+          <InputText
+            label="Name"
+            onChangeText={(text) =>
+              setUserData((prev) => {
+                return {
+                  ...prev,
+                  name: text,
+                };
+              })
+            }
+          />
+          <InputText
+            label="Email"
+            onChangeText={(text) =>
+              setUserData((prev) => {
+                return {
+                  ...prev,
+                  email: text,
+                };
+              })
+            }
+          />
+          <InputText
+            label="Password"
+            onChangeText={(text) =>
+              setUserData((prev) => {
+                return {
+                  ...prev,
+                  password: text,
+                };
+              })
+            }
+          />
 
           <View className="mb-4 items-end">
             <Pressable onPress={handleNavigation}>

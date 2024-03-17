@@ -1,6 +1,7 @@
 import CategoriesScreen from "./categories-screen";
 import CategoryScreen from "./category-screen";
 import CompletedScreen from "./completed-screen";
+import CreateCategoryScreen from "./create-category-screen";
 import EditTaskScreen from "./editTask-screen";
 import HomeScreen from "./home-screen";
 import SignInScreen from "./signin-screen";
@@ -18,4 +19,5 @@ export {
   TodayScreen,
   CategoriesScreen,
   CategoryScreen,
+  CreateCategoryScreen,
 };
